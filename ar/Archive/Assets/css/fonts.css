@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'MarkWebPro';
+    src: url('../fonts/MarkWebPro-MediumW01-Rg.eot');
+    src: url('../fonts/MarkWebPro-MediumW01-Rg.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MarkWebPro-MediumW01-Rg.woff2') format('woff2'),
+        url('../fonts/MarkWebPro-MediumW01-Rg.woff') format('woff'),
+        url('../fonts/MarkWebPro-MediumW01-Rg.ttf') format('truetype'),
+        url('../fonts/MarkWebPro-MediumW01-Rg.svg#MarkWebPro-MediumW01-Rg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MarkWebPro';
+    src: url('../fonts/MarkWebPro-BoldW01-Regular.eot');
+    src: url('../fonts/MarkWebPro-BoldW01-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MarkWebPro-BoldW01-Regular.woff2') format('woff2'),
+        url('../fonts/MarkWebPro-BoldW01-Regular.woff') format('woff'),
+        url('../fonts/MarkWebPro-BoldW01-Regular.ttf') format('truetype'),
+        url('../fonts/MarkWebPro-BoldW01-Regular.svg#MarkWebPro-BoldW01-Regular') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MarkWebPro';
+    src: url('../fonts/MarkWebW01-Regular.eot');
+    src: url('../fonts/MarkWebW01-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MarkWebW01-Regular.woff2') format('woff2'),
+        url('../fonts/MarkWebW01-Regular.woff') format('woff'),
+        url('../fonts/MarkWebW01-Regular.ttf') format('truetype'),
+        url('../fonts/MarkWebW01-Regular.svg#MarkWebW01-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,568 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+/* GENERAL */
+html, body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  background-color: #F5F5F5;
+}
+html.zz, body.zz {
+  min-height: 100%;
+  background: url(../imgs/lion.svg) #f0f0f0 no-repeat fixed bottom right;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* HEADER */
+#header {
+  background-color: #FFF;
+  border-bottom: 1px solid #C0C0C0;
+  padding: 15px 0;
+}
+#header .container {
+  max-width: 1700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  #header .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+#header .logo img {
+  max-width: 90px;
+}
+@media (max-width: 767px) {
+  #header .right {
+    display: none;
+  }
+}
+
+/* LOGIN AREA */
+#login-area {
+  max-width: 448px;
+  margin: 50px auto;
+}
+#login-area .box {
+  width: 100%;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 2px 4px #BFBFBF;
+          box-shadow: 0px 2px 4px #BFBFBF;
+  padding: 40px;
+  border-radius: 5px;
+}
+#login-area .box .media {
+  margin-bottom: 30px;
+}
+#login-area .box .media h5 {
+  color: #767676;
+  font-size: 23px;
+  font-weight: 400;
+}
+#login-area .box .media p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+#login-area .box .title {
+  color: #ff6200;
+  font-weight: 500;
+  font-size: 19px;
+  padding: 25px;
+}
+#login-area .box > a {
+  padding: 25px;
+  border-top: 1px solid #F0F0F0;
+  display: block;
+  color: #333;
+}
+#login-area .box > a img {
+  height: 32px;
+  width: 32px;
+  margin-right: 10px;
+}
+#login-area .box > a:hover {
+  background-color: #F0F0F0;
+}
+#login-area .box #forma .form-group.has-error input {
+  border-color: #FF0000;
+}
+#login-area .box #forma .form-group.has-error input:focus {
+  border-color: #FF0000;
+}
+#login-area .box #forma .form-group.has-error .groups {
+  border-color: #FF0000;
+}
+#login-area .box #forma .form-group.has-error .error-message {
+  margin-top: 3px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 300;
+}
+#login-area .box #forma .form-group.has-error .error-message img {
+  margin-right: 3px;
+}
+#login-area .box #forma .error {
+  background-color: #FFEBEB;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+#login-area .box #forma .error .symbol {
+  margin-right: 20px;
+}
+#login-area .box #forma .error .symbol img {
+  width: 22px;
+  max-width: inherit;
+}
+#login-area .box #forma .error .content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #333333;
+  font-size: 16px;
+}
+#login-area .box #forma legend {
+  color: #000;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+#login-area .box #forma legend svg {
+  cursor: pointer;
+  color: #767676;
+}
+#login-area .box #forma ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+#login-area .box #forma ul li {
+  list-style-type: none;
+  position: relative;
+  margin-left: 30px;
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#login-area .box #forma ul li:last-child {
+  margin-bottom: 0;
+}
+#login-area .box #forma ul li:before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #C4C4C4;
+  border-radius: 100%;
+  left: -30px;
+  top: 0;
+}
+#login-area .box #forma ul li:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #FF6200;
+  left: -24px;
+  top: 6px;
+  position: absolute;
+  border-radius: 100%;
+  display: none;
+}
+#login-area .box #forma ul li.active:after {
+  display: block;
+}
+#login-area .box #forma .groups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: inset 0 3px 2px -2px #D5D5D5;
+          box-shadow: inset 0 3px 2px -2px #D5D5D5;
+  border: 1px solid #D5D5D5;
+  border-radius: 4px;
+}
+#login-area .box #forma .groups div {
+  position: relative;
+  width: 33.33%;
+}
+#login-area .box #forma .groups div:nth-child(1) input {
+  border-radius: 4px 0 0 4px;
+}
+#login-area .box #forma .groups div:nth-child(1):after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 8px;
+  width: 1px;
+  height: 25px;
+  background-color: #A8A8A8;
+  z-index: 99999;
+}
+#login-area .box #forma .groups div:nth-child(2) input {
+  border-radius: 0;
+}
+#login-area .box #forma .groups div:nth-child(2):after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 8px;
+  width: 1px;
+  height: 25px;
+  background-color: #A8A8A8;
+  z-index: 99999;
+}
+#login-area .box #forma .groups div:nth-child(3) input {
+  border-radius: 0 4px 4px 0;
+}
+#login-area .box #forma .groups input {
+  border: 0 !important;
+}
+#login-area .box #forma .groups input:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0.125em 0.125em #9fcaea, 0 0.125em 0.125em 0 #d9d9d9 inset !important;
+  box-shadow: 0 0 0.125em 0.125em #9fcaea, 0 0.125em 0.125em 0 #d9d9d9 inset !important;
+  border: 0.0625em solid #559bd1 !important;
+}
+#login-area .box #forma .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+  color: #fff;
+  background-color: rgb(255, 98, 0);
+  border-color: rgb(255, 98, 0);
+}
+#login-area .box #forma .custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  background-color: rgb(255, 98, 0);
+  border-color: rgb(255, 98, 0);
+}
+#login-area .box #forma label {
+  font-size: 16px;
+  color: rgb(84, 84, 84);
+  margin-bottom: 3px;
+}
+#login-area .box #forma input[type=text] {
+  height: 40px;
+  -webkit-box-shadow: inset 0 3px 2px -2px #D5D5D5;
+  box-shadow: inset 0 3px 2px -2px #D5D5D5;
+  border: 1px solid #D5D5D5;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+#login-area .box #forma input[type=text]:focus {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  border-color: #66afe9;
+}
+#login-area .box #forma p {
+  font-size: 16px;
+}
+#login-area .box #forma p svg {
+  color: #ff6200;
+  margin-right: 5px;
+}
+#login-area .box #forma p span {
+  color: #525199;
+  text-decoration: underline;
+}
+#login-area .box #forma button {
+  height: 44px;
+  background-color: #FF6200;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0 15px;
+  border: 2px solid #FF6200;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 100%;
+}
+#login-area .box #forma button:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+#login-area .box #forma button:hover {
+  background-color: #FFF;
+  color: #767676;
+}
+#login-area .box #forma button.reset {
+  background-color: transparent;
+  color: #FF6200;
+  display: none;
+}
+#login-area .box #forma button.reset:hover {
+  color: #767676;
+}
+#login-area .box #forma .password-area {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#login-area .box #forma .password-area div {
+  width: 16.66%;
+  height: 50px;
+  border-top: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  position: relative;
+}
+#login-area .box #forma .password-area div:first-child {
+  border-left: 1px solid #D9D9D9;
+  border-radius: 4px 0 0 4px;
+}
+#login-area .box #forma .password-area div:last-child {
+  border-radius: 0 4px 4px 0;
+}
+#login-area .box #forma .password-area div:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #FF6200;
+  left: calc(50% - 6px);
+  top: calc(50% - 6px);
+  position: absolute;
+  border-radius: 100%;
+  display: none;
+}
+#login-area .box #forma .password-area div.active:after {
+  display: block;
+}
+#login-area .box #forma .password-area div.current {
+  background-color: #F0F0F0;
+  border: 1px solid #000;
+}
+#login-area .box #forma .password-area div.current:after {
+  display: none;
+}
+#login-area .box #forma .numbers {
+  margin-top: 20px;
+}
+#login-area .box #forma .numbers ul {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#login-area .box #forma .numbers ul li {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  height: 65px;
+  margin: 0;
+  margin-top: -1px;
+  color: #FF6200;
+  font-size: 26px;
+  font-weight: 400;
+  border-top: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+}
+#login-area .box #forma .numbers ul li:before {
+  display: none;
+}
+#login-area .box #forma .numbers ul li:after {
+  display: none;
+}
+#login-area .box #forma .numbers ul li:nth-child(1) {
+  border-left: 1px solid #D9D9D9;
+}
+#login-area .box #forma .numbers ul li:nth-child(6) {
+  border-left: 1px solid #D9D9D9;
+}
+
+#main {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+@media (max-width: 575px) {
+  #main {
+    margin-top: 17px;
+  }
+}
+#main .banner {
+  margin: 0 auto;
+  max-width: 1164px;
+}
+#main #forma {
+  margin-top: 50px;
+}
+#main #forma .has-error input {
+  border-color: #FF0000 !important;
+}
+#main #forma .has-error .error-message {
+  margin-top: 3px;
+  color: #FF0000;
+  font-size: 12px;
+}
+#main #forma .has-error .error-message img {
+  max-width: 15px;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+#main #forma legend {
+  color: #ff6200;
+  font-size: 24px;
+  text-align: center;
+}
+#main #forma p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#main #forma label {
+  font-size: 14px;
+}
+#main #forma input[type=text] {
+  height: 40px;
+  -webkit-box-shadow: inset 0 3px 2px -2px #D5D5D5;
+  box-shadow: inset 0 3px 2px -2px #D5D5D5;
+  border: 1px solid #D5D5D5;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+#main #forma input[type=text]:focus {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  border-color: #66afe9;
+}
+#main #forma button {
+  height: 40px;
+  background-color: #FF6200;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0 15px;
+  border: 2px solid #FF6200;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 100%;
+}
+#main #forma button:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+#main #forma button:hover {
+  background-color: #FFF;
+  color: #767676;
+}
+
+.loader1 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.loader1 .lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.loader1 .lds-ring div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #ff6200;
+  border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #ff6200 transparent transparent transparent;
+}
+.loader1 .lds-ring div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+.loader1 .lds-ring div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+.loader1 .lds-ring div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+@-webkit-keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.loader2 {
+  border: 1px solid #C9C9C9;
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+  margin-top: 50px;
+}
+.loader2 h3 {
+  color: #ff6200;
+  font-size: 20px;
+  margin: 0;
+}
+.loader2 h3 p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#whitebox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000000000000000000000000;
+  background: #FFF;
+}
